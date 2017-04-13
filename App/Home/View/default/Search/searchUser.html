@@ -1,0 +1,141 @@
+<include file='Common:header'/>
+	<title>{$Think.config.WEBNAME}-微博找人</title>
+	<link rel="stylesheet" href="__PUBLIC__/Theme/default/Css/nav.css" />
+	<link rel="stylesheet" href="__PUBLIC__/Theme/default/Css/sech_user.css" />
+	<link rel="stylesheet" href="__PUBLIC__/Theme/default/Css/bottom.css" />
+	<script type="text/javascript" src='__PUBLIC__/Js/jquery-1.7.2.min.js'></script>
+     <script type="text/javascript" src='__PUBLIC__/layer/layer.js'></script>
+      <script type="text/javascript" src='__PUBLIC__/layer/dialog.js'></script>
+    <script type="text/javascript" src='__PUBLIC__/Js/nav.js'></script>
+<!--==========顶部固定导行条==========-->
+<include file='Common:nav'/>
+<!--==========内容主体==========-->
+	<div style='height:60px;opcity:10'></div>
+    <div class="main">
+    <!--=====左侧=====-->
+        <include file='Common:left'/>
+        <div id='right'>s
+    		<p id='sech-logo'></p>
+    		<div id='sech'>
+    			<div>
+	    			<form action="{:U('searchUser')}" method='get' name='search'>
+	    				<input type="text" name='keyword' id='sech-cons' value='<if condition="$keyword">{$keyword}<else/>搜索微博、找人</if>'/>
+	    				<input type="submit" value='搜&nbsp;索' id='sech-sub'/>
+	    			</form>
+    			</div>
+    			<ul>
+                    <li><span class='cur sech-type' url="{:U('sechUser')}">找人</span></li>
+    				<li><span class='sech-type' url="{:U('sechWeibo')}">微博</span></li>
+    			</ul>
+    		</div>
+    		<if condition="isset($result)">
+
+            
+    		<div id='content'>
+    			<if condition='$result'>
+	    		<div class='view_line'>
+	               用户
+	            </div>
+	            <ul>
+                <h3> <strong>一共搜索出来{$total}条数据</strong></h3>
+	            	<foreach name='result' item='v'>
+	    			<li>
+						<dl class='list-left'>
+							<dt>
+								<img src="
+								<if condition='$v["face80"]'>
+									{:substr($v['face80'],1)}
+								<else/>
+									__PUBLIC__/Images/noface.gif
+								</if>" width='80' height='80'/>
+							</dt>
+							<dd>
+								<a href="个人主页">
+                                   {$v['username']}
+                               
+                                </a>
+							</dd>
+							<dd>
+								<i class='icon icon-boy'></i>&nbsp;
+								<span>
+									<if condition='$v["location"]'>
+										{$v.location}
+									<else/>
+										该用户未填写所在地
+									</if>
+								</span>
+							</dd>
+							<dd>
+								<span>关注 <a href="" class="follow_a">{$v.follow}</a></span>
+								<span class='bd-l '>粉丝 <a href="" class="fans_a">{$v.fans}</a></span>
+								<span class='bd-l '>微博 <a href="">{$v.weibo}</a></span>
+							</dd>
+						</dl>
+	    				<dl class='list-right'>
+	    					<if condition='$v["mutual"]'>
+	    						<dt>互相关注</dt>
+	    						<dd class='del-follow' uid='{$v.uid}' type='1'>取消关注</dd>
+    						<elseif condition='$v["followed"]' />
+                            	<dt>√&nbsp;已关注</dt>
+                            	<dd class='del-follow' uid='{$v.uid}' type='1'>取消关注</dd>
+                        	<else/>
+	    						<dt class='add-fl' uid='{$v.uid}'>+&nbsp;关注</dt>
+	    					</if>
+	    				</dl>
+	    			</li>
+	    			</foreach>
+    			</ul>
+        <style>
+            .paginate a{
+                width:15px;
+                height:15px;
+                border:1px solid #ccc;
+                margin:0 5px;
+                display:inline-block;
+            }
+            .paginate .current{
+                background: #000;
+                color:#fff;
+                width:15px;
+                height:15px;
+                border:1px solid #ccc;
+                margin:0 5px;
+                display:inline-block;
+            }
+        </style>
+    			<div style="text-align:center;padding:20px;" class="paginate">{$page}</div>
+    			<else/>
+               
+    				<p style='text-indent:7em;'>未找到与<strong style='color:red'>{$keyword}</strong>相关的用户</p>
+    			</if>
+	        </div>
+	    	</if>
+    	</div>
+    </div>
+<!--==========内容主体结束==========-->
+<!--==========底部==========-->
+    <div id="bottom">
+        
+        <div id="copy">
+            <div>
+                <p>
+                    版权所有：后盾网 京ICP备10027771号-1 站长统计 All rights reserved, houdunwang.com services for Beijing 2008-2012 
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!--[if IE 6]>
+    <script type="text/javascript" src="__PUBLIC__/Js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('#top','background');
+        DD_belatedPNG.fix('.logo','background');
+        DD_belatedPNG.fix('#sech_text','background');
+        DD_belatedPNG.fix('#sech_sub','background');
+        DD_belatedPNG.fix('.send_title','background');
+        DD_belatedPNG.fix('.icon','background');
+        DD_belatedPNG.fix('.ta_right','background');
+    </script>
+<![endif]-->
+</body>
+</html>

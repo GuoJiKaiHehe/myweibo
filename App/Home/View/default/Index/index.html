@@ -1,0 +1,610 @@
+
+
+ <include file='Common:header'/>
+    <title>{$Think.config.WEBNAME}-首页</title>
+    <link rel="stylesheet" href="__PUBLIC__/Theme/default/Css/nav.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Theme/default/Css/index.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Theme/default/Css/bottom.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Uploadify/uploadify.css"/>
+    
+    <script type="text/javascript" src='__PUBLIC__/Js/nav.js'></script>
+    <script type="text/javascript" src='__PUBLIC__/Uploadify/jquery.uploadify.min.js'></script>
+     <script type="text/javascript" src='__PUBLIC__/Js/Pinyin.js'></script>
+    <script type="text/javascript" src='__PUBLIC__/Js/index.js'></script>
+    <script type='text/javascript'>
+        var PUBLIC = '__PUBLIC__';
+        var uploadUrl = '{:U("Common/uploadPic")}';
+        var sid = '{:session_id()}';
+        var ROOT = '__ROOT__';
+        var commentUrl = "{:U('Index/sendComment')}";
+        var getComment = '{:U("Index/getComment")}';
+        var keepUrl = '{:U("Index/keep")}';
+        var delWeibo = '{:U("Index/delWeibo")}';
+    </script>
+<include file='Common:nav'/>
+<!--==========内容主体==========-->
+<div style='height:60px;opcity:10'></div>
+    <div class="main">
+    <!--=====左侧=====-->
+    <include file='Common:left'/>
+    <!--=====中部=====-->
+        <div id="middle" class='fleft'>
+        <!--微博发布框-->
+            <div class='send_wrap'>
+                <div class='send_title fleft'></div>
+                <div class='send_prompt fright'>
+                    <span>你还可以输入<span id='send_num'>140</span>个字</span>
+                </div>
+                <div class='send_write'>
+                    <form action='{:U("sendWeibo")}' method='post' name='weibo'>
+                        <textarea sign='weibo' name='content'></textarea>
+                        <span class='ta_right'></span>
+                        <div class='send_tool'>
+                            <ul class='fleft'>
+                                <li title='表情'><i class='icon icon-phiz phiz' sign='weibo'></i></li>
+                                <li title='图片'><i class='icon icon-picture'></i>
+                                <!--图片上传框-->
+            <style>
+            .clear:after{
+                content:' ';
+                display:block;
+                clear:both;
+                visibility: hidden;
+            }
+                #picShow{
+                    border-top:1px solid #ccc;
+                    width:auto;
+                    height:auto;
+                }
+               
+                #picShow .pic_list{
+                    width:auto;
+                    height:auto;
+
+                }
+                 #picShow .pic_list li{
+                    display:inline-block;
+                    float:none;
+                    margin:5px;
+                    padding:2px;
+                    border:1px solid #ccc;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    width:80;
+                    height:80px;
+                }
+                 #picShow .pic_list li img{
+                    display:block;
+                    border:none;
+                 }
+                 #upload_img{
+                    min-height:140px;
+                 }
+                 #middle .send_wrap .send_tool ul li  #upload_img li{
+                            float:left;
+                            position:static;
+
+                 }
+            </style>
+                                    <div id="upload_img" class='hidden clear' style="min-height:140px;">
+                                        <div class='upload-title'><p>本地上传</p><span class='close'></span></div>
+                                        <div class="upload-btn">
+                                            <input type="file" name="picture" id="picture" />
+                                        </div>
+                                        
+                                        <div id='picShow' class="clear">
+                                            <ul class="pic_list clear" style="height:100%;width:100%;">
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                <!--图片上传框-->
+
+                                    
+                                </li>
+                            </ul>
+                            <input type='submit' value='' class='send_btn fright' title='发布微博按钮'/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <!--微博发布框-->
+        <style>
+            .view_line a{
+                text-decoration: none;display:block;
+                color:#fff;
+            }
+        </style>
+            <div class='view_line'>
+                <strong type="all" <if condition="I('get.type') eq 'all'">class="current"</if> >全部微博</strong>
+                <strong type="follow"  <if condition="I('get.type') eq 'follow'">class="current"</if> >我关注的</strong>
+                <strong type="original"  <if condition="I('get.type') eq 'original'">class="current"</if> >原创的</strong>
+                <strong type="video" <if condition="I('get.type') eq 'video'">class="current"</if> >视频</strong>
+                <strong type="music"<if condition="I('get.type') eq 'music'">class="current"</if>  >音乐</strong>
+                 <strong type="pic"<if condition="I('get.type') eq 'pic'">class="current"</if>  >图片</strong>
+            </div>
+<if condition='!$weibo'>
+    没有发布的微博
+<else/>
+<style>
+.weibo img{
+    cursor:pointer;
+}
+    .weibo .content{
+        margin:8px 4px;
+    }
+</style>
+<foreach name='weibo' item='v'>
+    <if condition="$v['isturn'] eq 0">
+<!--====================普通微博样式====================-->
+            <div class="weibo">
+                <!--头像-->
+                <div class="face">
+                    <a href="{:U('/u/'.$v['uid'])}" width="50" height="50" style="width:50px;height:50px;display:block;overflow:hidden;"/>
+                        <img src="/{$v['face']}" alt="" width="50" height="50">
+                    </a>
+                </div>
+                <div class="wb_cons">
+                    <dl>
+                    <!--用户名-->
+                        <dt class='author'>
+                            <a href="{:U('/u/'.$v['uid'])}">{$v.username}</a>
+                        </dt>
+                    <!--发布内容-->
+                        <dd class='content'>
+                            <p>{$v['content']}</p>
+                        </dd>
+                    <!--微博图片-->
+                    <if condition="$v['images']">
+                        <dd>
+                        
+                            <div class='wb_img clear'>
+                            <!--小图-->
+                                <ol><if condition="$v['isfigure'] eq 1">
+                                    <volist name="v['images']" id="img">
+                                    <li style="float:left;margin:5px;border:1px solid #ccc;padding:2px;border-radius:5px;margin:5px;">
+                                    <img src="{$img['medium']}" alt="" class="wb_figure" max="{$img['max']}" source="{$img['source']}" medium="{$img['medium']}">
+                                    </li>
+                                    </volist>
+                                    <else />
+                                        <volist name="v['images']"  id="img">
+                                            <li style="float:left;margin:5px;border:1px solid #ccc;padding:2px;border-radius:5px;margin:5px;">
+                                            <img src="{$img['mini']}" alt="" class="wb_figure" max="{$img['max']}" source="{$img['source']}" medium="{$img['medium']}"></li>
+                                        </volist>
+                                    </if>
+                                </ol>
+                                <div class="img_tool hidden clear" style="display:none">
+                                    <ul>
+                                        <li>
+                                            <i class='icon icon-packup'></i>
+                                            <span class='packup'>&nbsp;收起</span>
+                                        </li>
+                                        <li>|</li>
+                                        <li>
+                                            <i class='icon icon-bigpic'></i>
+                                            <a href="/Uploads/Pic/{$v.max}" target='_blank'>&nbsp;查看大图</a>
+                                        </li>
+                                    </ul>
+                                <!--中图-->
+                                    <div class="img_info">
+                                    <img src="/Uploads/Pic/{$v.medium}"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </if>
+                    </dl>
+                <!--操作-->
+                    <div class="wb_tool" style="">
+                    <!--发布时间-->
+                        <span class="send_time">{$v['create_at']}</span>
+                        <ul>
+                        <if condition='isset($_SESSION["uid"]) && $_SESSION["uid"] eq $v["uid"]'>
+                            <li class='del-li hidden'><span class='del-weibo' wid='{$v.id}'>删除</span></li>
+                            <li class='del-li hidden'>|</li>
+                        </if>
+                            <li><span class='turn' id='{$v["id"]}'>转发<if condition='$v["turn"]'><span>({$v.turn})</span></if></span></li>
+                            <li>|</li>
+                            <li class='keep-wrap'>
+                                <span class='keep' wid='{$v.id}'>收藏<if condition='$v["keep"]'><span>({$v.keep})</span></if></span>
+                                <div class='keep-up hidden'></div>
+                            </li>
+                            <li>|</li>
+                            <li><span class='comment' wid='{$v.id}'>评论
+
+                            <if condition='$v["comment"]'><span>({$v.comment})</span></if></span></li>
+                        </ul>
+                    </div>
+                <!--=====回复框=====-->
+                    <div class='comment_load hidden'>
+                        <img src="__PUBLIC__/Images/loading.gif">评论加载中，请稍候...
+                    </div>
+                    <div class='comment_list hidden'>
+                        <textarea name="" sign='comment{$key}'></textarea>
+                        <ul>
+                            <li class='phiz fleft' sign='comment{$key}'></li>
+                            <li class='comment_turn fleft'>
+                                <label>
+                                    <input type="checkbox" name=''/>同时转发到我的微博
+                                </label>
+                            </li>
+                            <li class='comment_btn fright' wid='{$v.id}' uid='{$v.uid}'>评论<span>{$v[comment]}</span></li>
+                        </ul>
+                        <div class="com_box">
+                                        
+                        </div>
+                    </div>
+                <!--=====回复框结束=====-->
+                </div>
+            </div>
+
+           <!--=====转发微博=====-->  
+<else />
+<div class="weibo">
+            <!--头像-->
+                <div class="face">
+                    <a href="{:U('/u/'.$v['uid'])}">
+                        <img src="/{$v['face']}" width='50' height='50'/>
+                    </a>
+                </div>
+                <div class="wb_cons">
+                    <dl>
+                    <!--用户名-->
+                        <dt class='author'>
+                            <a href="{:U('/u/'.$v['uid'])}">{$v.username}</a>
+                        </dt>
+                    <!--发布内容-->
+                        <dd class='content'>
+                            <p>{$v['content']}</p>
+                        </dd>
+                    <!--转发的微博内容-->
+                   
+                        <dd>
+                            <div class="wb_turn">
+                                <dl>
+                                <!--原作者-->
+                                    <dt class='author'>
+                                        <a href="{:U('/u/'.$v['isturn']['uid'])}">@{$v['isturn']['username']}
+                                        </a>
+                                    </dt>
+                                <!--原微博内容-->
+                                    <dd class='content'>
+                                        <p>{$v['isturn']['content']}</p>
+                                    </dd>
+                                <!--原微博图片-->
+                        <if condition="$v['isturn']['images']">
+                                <dd>
+                        
+                            <div class='wb_img clear'>
+                            <!--小图-->
+                                <ol>
+                                <if condition="$v['isturn']['isfigure'] eq 1">
+                    
+                                    <volist name="v['isturn']['images']" id="img">
+  
+                                    <li style="float:left;margin:5px;border:1px solid #ccc;padding:2px;border-radius:5px;margin:5px;">
+                                    <img src="{$img['medium']}" alt="" class="wb_figure" max="{$img['max']}" source="{$img['source']}" medium="{$img['medium']}">
+                                    </li>
+                                    </volist>
+                                    <else />
+                                        <volist name="v['isturn']['images']"  id="img">
+                                            <li style="float:left;margin:5px;border:1px solid #ccc;padding:2px;border-radius:5px;margin:5px;">
+                                            <img src="{$img['mini']}" alt="" class="wb_figure" max="{$img['max']}" source="{$img['source']}" medium="{$img['medium']}"></li>
+                                        </volist>
+                                 </if>
+                                </ol>
+                                <div class="img_tool hidden clear" style="display:none">
+                                    <ul>
+                                        <li>
+                                            <i class='icon icon-packup'></i>
+                                            <span class='packup'>&nbsp;收起</span>
+                                        </li>
+                                        <li>|</li>
+                                        <li>
+                                            <i class='icon icon-bigpic'></i>
+                                            <a href="/Uploads/Pic/" target='_blank'>&nbsp;查看大图</a>
+                                        </li>
+                                    </ul>
+                                <!--中图-->
+                                    <div class="img_info">
+                                    <img src=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                       
+                       </if>
+                                </dl>
+                                <!--转发微博操作-->
+                                <div class="turn_tool">
+                                    <span class='send_time'>
+                                        {$v.create_at}
+                                    </span>
+                                    <ul>
+                                        <li>
+                                        <a href="javascript:void(0)"  class="turn" id="{$v['isturn']['id']}">转发
+                                        <if condition='$v["isturn"]["turn"]'><span>({$v['isturn']['turn']})</span></if>
+                                        </a></li>
+                                        <li>|</li>
+                                        <li><a href="javascript:void(0)" wid='{$v["isturn"]["id"]}' class="comment">评论
+                                        <if condition='$v["isturn"]["comment"]'>
+                                        <span>({$v['isturn']['comment']})</span></if>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                                <div class='comment_load hidden'>
+                                    <img src="__PUBLIC__/Images/loading.gif">评论加载中，请稍候...
+                                </div>
+                                <div class='comment_list hidden'>
+                                    <textarea name="" sign='comment{$key}' style="width:90%"></textarea>
+                                    <ul>
+                                        <li class='phiz fleft' sign='comment{$key}'></li>
+                                        <li class='comment_turn fleft'>
+                                            <label>
+                                                <input type="checkbox" name=''/>同时转发到我的微博
+                                            </label>
+                                        </li>
+                                        <li class='comment_btn fright' wid="{$v['isturn']['id']}" uid="{$v['isturn']['uid']}">评论</li>
+                                    </ul>
+                                    <div class="com_box">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                  
+                    </dl>
+                    <!--操作-->
+                    <div class="wb_tool">
+                        <!--发布时间-->
+                        <span class="send_time">
+                            {$v.create_at}
+                        </span>
+                        <ul>
+                        <if condition='isset($_SESSION["uid"]) && $_SESSION["uid"] eq $v["uid"]'>
+                            <li class='del-li hidden'><span class='del-weibo' wid='{$v.id}'>删除</span></li>
+                            <li class='del-li hidden'>|</li>
+                        </if>
+                            <li><span class='turn' id='{$v.id}' tid='{$v.isturn.id}' mul="true">转发<if condition='$v["turn"]'><span>({$v.turn})</span></if></span></li>
+                            <li>|</li>
+                            <li class='keep-wrap'>
+                                <span class='keep' wid='{$v.id}'>收藏<if condition='$v["keep"]'><span>({$v.keep})</span></if></span>
+                                <div class='keep-up hidden'></div>
+                            </li>
+                            <li>|</li>
+                            <li><span class='comment' wid='{$v.id}'>评论<if condition='$v["comment"]'><span>({$v.comment})</span></if></span></li>
+                        </ul>
+                    </div>
+                    <!--回复框-->
+                    <div class='comment_load hidden'>
+                        <img src="__PUBLIC__/Images/loading.gif">评论加载中，请稍候...
+                    </div>
+                    <div class='comment_list hidden'>
+                        <textarea name="" sign='comment{$key}'></textarea>
+                        <ul>
+                            <li class='phiz fleft' sign='comment{$key}'></li>
+                            <li class='comment_turn fleft'>
+                                <label>
+                                    <input type="checkbox" name=''/>同时转发到我的微博
+                                </label>
+                            </li>
+                            <li class='comment_btn fright' wid='{$v.id}' uid='{$v.uid}'>评论</li>
+                        </ul>
+                        <div class="com_box">
+                                        
+                        </div>
+                    </div>
+                    <!--回复框结束-->
+                </div>
+            </div>
+    
+    </if>
+
+</foreach>
+
+            <div id='page'>{$page}</div>
+        </div>
+<!--==========右侧==========-->
+        <include file='Common:right'/>
+    </div>
+<!--==========内容主体结束==========-->
+
+<div id="ajax_send" style="display:none;">
+ <div class="weibo">
+                <!--头像-->
+                <div class="face">
+                    <a href="/#uid#">
+                        <img src="#myface#" width='50' height='50'/>
+                    </a>
+                </div>
+                <div class="wb_cons">
+                    <dl>
+                    <!--用户名-->
+                        <dt class='author'>
+                            <a href="#个人主页#">#用户名#</a>
+                        </dt>
+                    <!--发布内容-->
+                        <dd class='content'>
+                            <p>#内容#</p>
+                        </dd>
+                    <!--微博图片-->
+                        <dd>
+                            #thumb#
+                        </dd>
+                   
+                    </dl>
+                <!--操作-->
+                    <div class="wb_tool">
+                    <!--发布时间-->
+                        <span class="send_time">刚刚发布</span>
+                        <ul>
+                       <!--自己发布的肯定有权删除-->
+                            <li class='del-li hidden'><span class='del-weibo' wid='#wid#'>删除</span></li>
+                            <li class='del-li hidden'>|</li>
+                        
+                            <li><span class='turn' id='#wid#'>转发0</span></li>
+                            <li>|</li>
+                            <li class='keep-wrap'>
+                                <span class='keep' wid='#wid#'>收藏0</span>
+                                <div class='keep-up hidden'></div>
+                            </li>
+                            <li>|</li>
+                            <li><span class='comment' wid="#wid#">评论0</span></li>
+                        </ul>
+                    </div>
+                <!--=====回复框=====-->
+                    <div class='comment_load hidden'>
+                        <img src="__PUBLIC__/Images/loading.gif">评论加载中，请稍候...
+                    </div>
+                    <div class='comment_list hidden'>
+                        <textarea name="" sign='comment'></textarea>
+                        <ul>
+                            <li class='phiz fleft' sign='comment'></li>
+                            <li class='comment_turn fleft'>
+                                <label>
+                                    <input type="checkbox" name=''/>同时转发到我的微博
+                                </label>
+                            </li>
+                            <li class='comment_btn fright' wid='#wid#' uid="#uid#">评论</li>
+                        </ul>
+                    </div>
+                <!--=====回复框结束=====-->
+                </div>
+</div>
+</div>
+<div id="ajax_send_turn" style="display:none;">
+    <div class="weibo">
+            <!--头像-->
+                <div class="face">
+                    <a href="{:U('/' . $v['uid'])}">
+                        <img src="\
+                        <if condition='$v["face"]'>
+                            __ROOT__/Uploads/Face/{$v.face}
+                        <else/>
+                            __PUBLIC__/Images/noface.gif
+                        </if>" width='50' height='50'/>
+                    </a>
+                </div>
+                <div class="wb_cons">
+                    <dl>
+                    <!--用户名-->
+                        <dt class='author'>
+                            <a href="{:U('/' . $v['uid'])}">{$v.username}</a>
+                        </dt>
+                    <!--发布内容-->
+                        <dd class='content'>
+                            <p>{$v.content}<span style="color:#ccc;font-weight:bold;">&nbsp;//&nbsp;</span></p>
+                        </dd>
+                    <!--转发的微博内容-->
+                    <if condition='$v["isturn"] eq -1'>
+                        <dd class="wb_turn">该微博已被删除</dd>
+                    <else/>
+                        <dd>
+                            <div class="wb_turn">
+                                <dl>
+                                <!--原作者-->
+                                    <dt class='turn_name'>
+                                        <a href="{:U('/' . $v['isturn']['uid'])}">@{$v.isturn.username}</a>
+                                    </dt>
+                                <!--原微博内容-->
+                                    <dd class='turn_cons'>
+                                        <p>{$v.isturn.content}</p>
+                                    </dd>
+                                <!--原微博图片-->
+                                <if condition='$v["isturn"]["max"]'>
+                                    <dd>
+                                        <div class="turn_img">
+                                        <!--小图-->
+                                            <img src="__ROOT__/Uploads/Pic/{$v.isturn.mini}" class='turn_mini_img'/>
+                                            <div class="turn_img_tool hidden">
+                                                <ul>
+                                                    <li>
+                                                        <i class='icon icon-packup'></i>
+                                                        <span class='packup'>&nbsp;收起</span></li>
+                                                    <li>|</li>
+                                                    <li>
+                                                        <i class='icon icon-bigpic'></i>
+                                                        <a href="__ROOT__/Uploads/Pic/{$v.isturn.max}" target='_blank'>&nbsp;查看大图</a>
+                                                    </li>
+                                                </ul>
+                                            <!--中图-->
+                                                <div class="turn_img_info">
+                                                    <img src="__ROOT__/Uploads/Pic/{$v.isturn.medium}"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </if>
+                                </dl>
+                                <!--转发微博操作-->
+                                <div class="turn_tool">
+                                    <span class='send_time'>
+                                        {$v.create_at}
+                                    </span>
+                                    <ul>
+                                        <li><a href="">转发<if condition='$v["isturn"]["turn"]'>({$v.isturn.turn})</if></a></li>
+                                        <li>|</li>
+                                        <li><a href="">评论<if condition='$v["isturn"]["comment"]'>({$v.isturn.comment})</if></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dd>
+                    </if>
+                    </dl>
+                    <!--操作-->
+                    <div class="wb_tool">
+                        <!--发布时间-->
+                        <span class="send_time">
+                            {$v.create_at}
+                        </span>
+                        <ul>
+                        <if condition='isset($_SESSION["uid"]) && $_SESSION["uid"] eq $v["uid"]'>
+                            <li class='del-li hidden'><span class='del-weibo' wid='{$v.id}'>删除</span></li>
+                            <li class='del-li hidden'>|</li>
+                        </if>
+                            <li><span class='turn' id='{$v.id}' tid='{$v.isturn.id}'>转发<if condition='$v["turn"]'>({$v.turn})</if></span></li>
+                            <li>|</li>
+                            <li class='keep-wrap'>
+                                <span class='keep' wid='{$v.id}'>收藏<if condition='$v["keep"]'>({$v.keep})</if></span>
+                                <div class='keep-up hidden'></div>
+                            </li>
+                            <li>|</li>
+                            <li><span class='comment' wid='{$v.id}'>评论<if condition='$v["comment"]'>({$v.comment})</if></span></li>
+                        </ul>
+                    </div>
+                    <!--回复框-->
+                    <div class='comment_load hidden'>
+                        <img src="__PUBLIC__/Images/loading.gif">评论加载中，请稍候...
+                    </div>
+                    <div class='comment_list hidden'>
+                        <textarea name="" sign='comment{$key}'></textarea>
+                        <ul>
+                            <li class='phiz fleft' sign='comment{$key}'></li>
+                            <li class='comment_turn fleft'>
+                                <label>
+                                    <input type="checkbox" name=''/>同时转发到我的微博
+                                </label>
+                            </li>
+                            <li class='comment_btn fright' wid='{$v.id}' uid='{$v.uid}'>评论</li>
+                        </ul>
+                    </div>
+                    <!--回复框结束-->
+                </div>
+            </div>
+
+</div>
+
+<!--==========底部==========-->
+<include file='Common:bottom'/>
+
+
+
+
+
+<!--
+
+
+
+-->
+
+
