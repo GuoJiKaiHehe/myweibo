@@ -11,6 +11,7 @@ class LoginController extends Controller {
         }
     }*/
     public function index(){
+       
         session('user',null);
         return $this->display();
     }
@@ -26,6 +27,7 @@ class LoginController extends Controller {
 
     public function login(){
         //登陆检查；
+     
        if(IS_AJAX){
               $user=D('User');
          echo   $user->login();

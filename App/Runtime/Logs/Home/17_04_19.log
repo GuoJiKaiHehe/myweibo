@@ -1,0 +1,805 @@
+[ 2017-04-19T15:58:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.093006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+NOTIC: [8] Undefined offset: 1 D:\fuwuqi\wamp64\www\myweibo\App\Home\Controller\CommonController.class.php 第 20 行.
+
+[ 2017-04-19T15:58:32+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.848049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.850049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.763101s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.764101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.062004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.062004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.043002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.044002s ]
+
+[ 2017-04-19T15:58:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-19T15:58:40+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:2.2905s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0000s ]
+SQL: SELECT a.id,a.account,b.username,a.lock,a.password FROM wb_user a,wb_userinfo b WHERE ( a.account='admin' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.3342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-19T15:58:49+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.account,b.username,a.lock,a.password FROM wb_user a,wb_userinfo b WHERE ( a.account='woshimahuateng' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.0440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-19T15:59:14+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.account,b.username,a.lock,a.password FROM wb_user a,wb_userinfo b WHERE ( a.account='admin2' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-19T15:59:30+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.account,b.username,a.lock,a.password FROM wb_user a,wb_userinfo b WHERE ( a.account='admin2' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-04-19T16:00:44+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-19T16:00:49+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-19T16:00:55+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-19T16:01:14+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-19T16:01:47+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.account,b.username,a.lock,a.password FROM wb_user a,wb_userinfo b WHERE ( a.account='mahuateng' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-19T16:01:50+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.account,b.username,a.lock FROM wb_user a,wb_userinfo b WHERE ( a.account='mahuateng' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wb_weibo` [ RunTime:0.1890s ]
+SQL: SHOW COLUMNS FROM `wb_userinfo` [ RunTime:0.0020s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id > 0 ORDER BY weibo.create_at DESC LIMIT 0,50   [ RunTime:0.1560s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '35'  [ RunTime:0.0070s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '34'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wb_picture` [ RunTime:0.1180s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '34'  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0050s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0000s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '26'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '25'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '18'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '25'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '18'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '18'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '21'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '22'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '21'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '21'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 20  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 怒骂 - assumed '怒骂' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 阴险 - assumed '阴险' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 鄙视 - assumed '鄙视' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 嘻嘻 - assumed '嘻嘻' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 怒骂 - assumed '怒骂' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 16  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 13  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 10  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 9  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 7  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT `face50` FROM `wb_userinfo` WHERE `uid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_atme` [ RunTime:0.1110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wb_atme` WHERE `uid` = 8 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wb_group` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 8  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = null  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 8  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined variable: page D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 542 行.
+SQL: SELECT * FROM `wb_userinfo` WHERE `uid` = 8 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 552 行.
+NOTIC: [8] Undefined variable: username D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 553 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 557 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 562 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 563 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 565 行.
+SQL: SHOW COLUMNS FROM `wb_follow` [ RunTime:0.0970s ]
+SQL: SELECT `follow` FROM `wb_follow` WHERE `fans` = 8  [ RunTime:0.0080s ]
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `wb_follow` WHERE ( `fans` = null  ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 574 行.
+NOTIC: [8] Undefined variable: Array D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 574 行.
+NOTIC: [2] Illegal string offset 'uid' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 695 行.
+NOTIC: [2] Illegal string offset 'username' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 695 行.
+NOTIC: [2] Illegal string offset 'content' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 699 行.
+NOTIC: [2] Illegal string offset 'mini' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 706 行.
+NOTIC: [2] Illegal string offset 'max' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 715 行.
+NOTIC: [2] Illegal string offset 'medium' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 720 行.
+NOTIC: [2] Illegal string offset 'turn' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 732 行.
+NOTIC: [2] Illegal string offset 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 734 行.
+NOTIC: [2] Illegal string offset 'id' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 749 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.540031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.541031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-19T16:01:51+08:00 ] 127.0.0.1 /index.php/Index/Uploads/Face/_50858e1c45e674a6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-19T16:01:51+08:00 ] 127.0.0.1 /Public/Theme/default/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-19T16:01:51+08:00 ] 127.0.0.1 /Public/Theme/default/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-19T16:01:52+08:00 ] 127.0.0.1 /Uploads/Pic/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Uploads
+
+[ 2017-04-19T16:01:54+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.3460s ]
+SQL: SELECT a.id,a.account,b.username,a.lock FROM wb_user a,wb_userinfo b WHERE ( a.account='mahuateng' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wb_weibo` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wb_userinfo` [ RunTime:0.0020s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id > 0 ORDER BY weibo.create_at DESC LIMIT 0,50   [ RunTime:0.0370s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '35'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '34'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wb_picture` [ RunTime:0.0430s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '34'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0080s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '32'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0130s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.2580s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0310s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0050s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '30'  [ RunTime:0.0030s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0050s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0030s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0050s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0040s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '11'  [ RunTime:0.0010s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '26'  [ RunTime:0.0110s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '25'  [ RunTime:0.0090s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '18'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0050s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '25'  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '18'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '18'  [ RunTime:0.0030s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0070s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '21'  [ RunTime:0.0110s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0050s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '22'  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '21'  [ RunTime:0.0030s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.create_at AS create_at,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,weibo.isfigure AS isfigure,userinfo.username AS username,userinfo.face50 AS face FROM wb_weibo weibo LEFT JOIN wb_userinfo userinfo ON weibo.uid = userinfo.uid WHERE weibo.id = '21'  [ RunTime:0.0020s ]
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 21  [ RunTime:0.0090s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 打哈欠 - assumed '打哈欠' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 20  [ RunTime:0.0010s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 怒骂 - assumed '怒骂' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 阴险 - assumed '阴险' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 鄙视 - assumed '鄙视' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 18  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 吃惊 - assumed '吃惊' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 嘻嘻 - assumed '嘻嘻' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 怒骂 - assumed '怒骂' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 16  [ RunTime:0.0080s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 13  [ RunTime:0.0020s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 11  [ RunTime:0.0030s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 10  [ RunTime:0.0030s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 9  [ RunTime:0.0040s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 哈哈 - assumed '哈哈' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant 抱抱 - assumed '抱抱' D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php(47) : regexp code 第 1 行.
+SQL: SELECT `mini`,`medium`,`max`,`source` FROM `wb_picture` WHERE `wid` = 7  [ RunTime:0.0070s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\fuwuqi\wamp64\www\myweibo\App\Home\Model\WeiboModel.class.php 第 47 行.
+SQL: SELECT `face50` FROM `wb_userinfo` WHERE `uid` = 8 LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_atme` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wb_atme` WHERE `uid` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wb_group` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 8  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = null  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wb_group` WHERE `uid` = 8  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 430 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: max D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 343 行.
+NOTIC: [8] Undefined index: medium D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 348 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined index: images D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 323 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 386 行.
+NOTIC: [8] Undefined variable: page D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 542 行.
+SQL: SELECT * FROM `wb_userinfo` WHERE `uid` = 8 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 552 行.
+NOTIC: [8] Undefined variable: username D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 553 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 557 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 562 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 563 行.
+NOTIC: [8] Undefined variable: uid D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 565 行.
+SQL: SHOW COLUMNS FROM `wb_follow` [ RunTime:0.0940s ]
+SQL: SELECT `follow` FROM `wb_follow` WHERE `fans` = 8  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\fuwuqi\wamp64\www\myweibo\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `wb_follow` WHERE ( `fans` = null  ) LIMIT 4   [ RunTime:0.0010s ]
+NOTIC: [8] Array to string conversion D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 574 行.
+NOTIC: [8] Undefined variable: Array D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 574 行.
+NOTIC: [2] Illegal string offset 'uid' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 695 行.
+NOTIC: [2] Illegal string offset 'username' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 695 行.
+NOTIC: [2] Illegal string offset 'content' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 699 行.
+NOTIC: [2] Illegal string offset 'mini' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 706 行.
+NOTIC: [2] Illegal string offset 'max' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 715 行.
+NOTIC: [2] Illegal string offset 'medium' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 720 行.
+NOTIC: [2] Illegal string offset 'turn' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 732 行.
+NOTIC: [2] Illegal string offset 'comment' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 734 行.
+NOTIC: [2] Illegal string offset 'id' D:\fuwuqi\wamp64\www\myweibo\App\Runtime\Cache\Home\b60326ec84a0bfd6cb7251ea8bc93617.php 第 749 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.349020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.349020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-19T16:01:54+08:00 ] 127.0.0.1 /index.php/Index/getMsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wb_user` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.account,b.username,a.lock FROM wb_user a,wb_userinfo b WHERE ( a.account='mahuateng' AND a.id=b.uid ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-19T16:01:54+08:00 ] 127.0.0.1 /Uploads/Pic/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Uploads
+
